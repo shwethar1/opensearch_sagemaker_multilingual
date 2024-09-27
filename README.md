@@ -8,7 +8,7 @@ These first couple steps set up an Amazon SageMaker notebook to use for the Open
 
 please replace the placeholders ```${AWS::Region}``` and ```${AWS::AccountId}``` with your actual AWS region and account ID.
 
-### Step 1 - Create an IAM role for Sagemaker and attatch policies
+### Step 1 - Create an IAM role for Sagemaker and attach policies
 ```
 aws iam create-role \
     --role-name ${AWS::Region}-${AWS::AccountId}-SageMaker-Execution-demo-role \
