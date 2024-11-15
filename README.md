@@ -124,10 +124,11 @@ Paste the following JSON script:
 		{
 			"Action": [
 				"sagemaker:InvokeEndpointAsync",
+				"comprehend:DetectDominantLanguage",
 				"sagemaker:InvokeEndpoint"
 			],
 			"Resource": [
-				"arn:aws:sagemaker:${AWS::Region}:${AWS::AccountId}:endpoint/*"
+				"*"
 			],
 			"Effect": "Allow"
 		}
